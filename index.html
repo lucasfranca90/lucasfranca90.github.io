@@ -3,12 +3,47 @@
     <head>
         <meta charset="utf-8">
         <title>Portifólio</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+        <style>
+            .main-title {
+                font-family: 'Anton',sans-serif;
+                text-align: center;
+                font-weight: 100;
+            }
+            body {
+                background-color: bisque;
+            }
+            p, ul li {
+                font-family: sans-serif;
+                font-size: 15px;
+            
+        
+            }
+            #alinhamento {
+                text-align: center;
+            }
+
+            #second-title {
+                text-align: center;
+                font-family: sans-serif;
+            }
+
+            #picture {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 60%;
+            }
+        </style>
     </head>
     <body>
-        <h1>Olá! Sou Lucas França.</h1>
+        <h1 class="main-title">Olá! Sou Lucas França.</h1>
+        <img id="picture" src="lucasfranca.github.io/images/pic.png" alt="Foto minha" width="200">
         <br>
-        <h2>Estou na caminhada para se tornar um desenvolvedor</h2>
-        <p>
+        <h2 id="second-title">Estou na caminhada para se tornar um desenvolvedor</h2>
+        <p id="alinhamento">
             Tenho 24 anos, e sou de Sorocaba/SP. E <strong>Estudo na Trybe</strong>,
              uma escola que esta me guiando para uma 
             jornada cheia de aprendizagem e experiências empíricas sobre <em>"codar"</em>.<br>
@@ -19,7 +54,7 @@
             <ul>
                 <li>Criativo</li>
                 <li>Proativo</li>
-                <li>Autodidata</li>
+                <li>Produtivo</li>
                 <li>Participativo</li>
             </ul>
         </p>
