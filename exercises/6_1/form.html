@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+  <form action="" method="POST" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Dados Pessoais</legend>
+    <hr>
+    <div>
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" class="nome" required="required" placeholder="Digite seu nome" maxlength="40">
+    </div>
+    <div>
+      <label for="email">E-mail</label>
+      <input type="email" class="email" name="email" required="required" placeholder="email@email.com" maxlength="50">
+      <span id="error-email"></span>
+    </div>
+    <div>
+      <label for="cpf">CPF</label>
+      <input type="number" class="cpf" name="cpf" required="required" placeholder="Digite seu CPF" maxlength="11">
+    </div>
+    <div>
+      <label for="endereço">Endereço</label>
+      <input type="text" class="endereço" name="endereço" required="required" placeholder="Endereço" maxlength="200">
+    </div>
+    <div>
+      <label for="cidade">Cidade</label>
+      <input type="text" class="cidade" name="cidade" required="required" placeholder="Cidade" maxlength="28">
+    </div>
+    <div>
+      <label for="estadosBrasileiros">Estado</label>
+      <select id="estadosBrasileiros" name="estado" required="required"></select>      
+    </div>
+    <div>
+      <div>Tipo:</div>
+      <label for="ap">Apartamento</label>
+      <input type="radio" id="ap" name="tipo">
+      <label for="casa">Casa</label>
+      <input type="radio" id="casa" name="tipo">
+    </div>
+    <hr>
+  </fieldset>
+  <hr>
+  <fieldset>
+    <legend>Seu último emprego</legend>
+    <hr>
+    <div>
+      <textarea name="resume" id="resume" cols="30" rows="10" required maxlength="1000">Qual seu último emprego?</textarea>
+    </div>
+    <div>
+      <label for="">Cargo</label>
+      <input type="text" required="required" maxlength="40">
+    </div>
+    <div>
+      <label for="">Descrição do cargo</label>
+      <input type="text" required="required" maxlength="500" placeholder="Descreva aqui">
+    </div>
+    <label for="date">Data de início</label>
+    <input type="date">
+    <hr>
+  </fieldset>
+  </form>
+  <script src="script.js"></script> 
+</body>
+</html>
