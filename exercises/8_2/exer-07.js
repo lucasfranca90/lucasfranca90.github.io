@@ -18,10 +18,7 @@ const lesson3 = {
   turno: 'noite',
 };
 
-//Crie uma função para adicionar o turno da manhã na lesson2. Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
+//Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
 
-const addNewKey = (obj, key, value) => {
-  obj[key] = value;
-};
-
-addNewKey(lesson2, 'turno', 'noite');
+const getValueByNumber = (obj,number) => Object.values(obj)[number];
+console.log(getValueByNumber);
