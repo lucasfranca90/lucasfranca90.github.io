@@ -1,7 +1,3 @@
-/*Faça uma função que retorne true se algum livro foi lançado na década de 80 e false caso contrário.
-
-Dica: Use a função some */
-
 const assert = require('assert');
 
 const books = [
@@ -70,10 +66,7 @@ const books = [
 const expected_result = true
 
 function someBookWasReleaseOnThe80s() {
-  // escreva seu código aqui
-  return books.every(book => (
-    book.author.birthYear > 1900 && book.author.birthYear <= 2000
-  ));
+  return books.some(book => book.releaseYear >= 1980 && book.releaseYear <= 1989);
 }
 
 assert.equal(someBookWasReleaseOnThe80s(), expected_result);
